@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-
 import { CheckCircle } from "lucide-react";
 import { GridPattern } from "../components/grid-pattern";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const projects = [
   {

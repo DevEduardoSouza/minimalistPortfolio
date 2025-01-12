@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { GridPattern } from "../components/grid-pattern";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ContatoPage() {
   const containerVariants = {
