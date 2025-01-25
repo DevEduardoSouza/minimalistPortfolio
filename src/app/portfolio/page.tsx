@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import { GridPattern } from "../components/grid-pattern";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Nav } from "../components/nav";
 
 const projects = [
   {
@@ -61,37 +62,7 @@ export default function Portfolio() {
         variants={containerVariants}
       >
         <div className="relative z-10">
-          <nav className="flex items-center justify-between px-8 py-6">
-            <div className="flex space-x-8">
-              <Link
-                href="/portfolio"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Portfólio
-              </Link>
-              <Link
-                href="/"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Sobre
-              </Link>
-            </div>
-
-            <div className="absolute left-1/2 -translate-x-1/2">
-              <Link href="/" className="text-white font-bold text-xl">
-                Eduardo Souza
-              </Link>
-            </div>
-
-            <div className="flex space-x-8">
-              <Link
-                href="/contato"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Contatos
-              </Link>
-            </div>
-          </nav>
+          <Nav isActiveName={false} />
 
           <main className="container mx-auto px-8 py-12">
             <div className="flex flex-col lg:flex-row gap-8">

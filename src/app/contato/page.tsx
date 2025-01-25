@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { GridPattern } from "../components/grid-pattern";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Nav } from "../components/nav";
 
 export default function ContatoPage() {
   const containerVariants = {
@@ -36,37 +36,7 @@ export default function ContatoPage() {
     <div className="min-h-screen bg-black text-white flex flex-col grid-pattern">
       <GridPattern />
 
-      <nav className="flex items-center justify-between px-8 py-6 z-10">
-        <div className="flex space-x-8">
-          <Link
-            href="/portfolio"
-            className="text-gray-300 hover:text-white transition-colors"
-          >
-            Portfólio
-          </Link>
-          <Link
-            href="/"
-            className="text-gray-300 hover:text-white transition-colors"
-          >
-            Sobre
-          </Link>
-        </div>
-
-        <div className="absolute left-1/2 -translate-x-1/2">
-          <Link href="/" className="text-white font-bold text-xl">
-            Eduardo Souza
-          </Link>
-        </div>
-
-        <div className="flex space-x-8">
-          <Link
-            href="/contato"
-            className="text-gray-300 hover:text-white transition-colors"
-          >
-            Contatos
-          </Link>
-        </div>
-      </nav>
+      <Nav isActiveName={true} />
 
       <main className="flex-grow flex items-center justify-center px-4">
         <motion.div

@@ -1,8 +1,9 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+
 import { GridPattern } from "./components/grid-pattern";
+import { Nav } from "./components/nav";
 
 const slogans = [
   "Criando\nSaaS\nrevolucionários.",
@@ -37,37 +38,7 @@ export default function Page() {
     <div className="min-h-screen bg-black text-white grid-pattern">
       <GridPattern />
       <div className="relative z-10">
-        <nav className="flex items-center justify-between px-8 py-6 z-10">
-          <div className="flex space-x-8">
-            <Link
-              href="/portfolio"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Portfólio
-            </Link>
-            <Link
-              href="/"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Sobre
-            </Link>
-          </div>
-
-          <div className="absolute left-1/2 -translate-x-1/2">
-            <Link href="/" className="text-white font-bold text-xl">
-              Eduardo Souza
-            </Link>
-          </div>
-
-          <div className="flex space-x-8">
-            <Link
-              href="/contato"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Contatos
-            </Link>
-          </div>
-        </nav>
+        <Nav  isActiveName={true}/>
 
         <main className="container mx-auto px-8 mt-20 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
