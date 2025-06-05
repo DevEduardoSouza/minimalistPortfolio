@@ -9,8 +9,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Nav } from "../components/nav";
 import { SEO } from "../components/seo";
 
-import { Camera } from "lucide-react";
-
 const projects = [
   {
     title: "RecuperarFotos.IA",
