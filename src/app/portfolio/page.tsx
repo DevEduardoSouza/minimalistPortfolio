@@ -9,27 +9,15 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Nav } from "../components/nav";
 import { SEO } from "../components/seo";
 
+import { Camera } from "lucide-react";
+
 const projects = [
   {
-    title: "AlertFreela",
+    title: "RecuperarFotos.IA",
     description:
-      "Amplifique o impacto de sua carreira freelancer com nossa solução inovadora para encontrar as melhores oportunidades do mercado. Potencialize suas chances com IA inteligente, alertas precisos e conexão entre freelancers.",
-    icon: "/alertfreela-logo.webp",
-    link: "/projects/alertfreela",
-  },
-  {
-    title: "Corre Aqui",
-    description:
-      "Economize tempo e dinheiro encontrando as melhores ofertas na sua região. Digite o produto ou serviço que você procura, compare preços e aproveite os descontos próximos a você.",
-    icon: "/logo-corre-aqui.jpeg",
-    link: "/projects/corre-aqui",
-  },
-  {
-    title: "Eternal Time",
-    description:
-      "Eternize suas memórias esportivas com páginas dinâmicas e personalizadas para momentos marcantes do seu time do coração. Compartilhe com amigos e leve a torcida para o próximo nível.",
-    icon: "/eternal-time.png",
-    link: "/projects/eternal-time",
+      "Reviva suas lembranças mais queridas com tecnologia de ponta em restauração de imagens. Recupere fotos antigas ou danificadas, elimine arranhões, manchas e imperfeições, realce as cores e os detalhes com qualidade profissional. Transforme suas memórias visuais em arquivos nítidos, vibrantes e prontos para serem compartilhados novamente.",
+    icon: "/logo-recupera-foto-removebg-preview.png",
+    link: "https://www.recuperarfotos.com.br/",
   },
 ];
 
@@ -141,7 +129,11 @@ export default function Portfolio() {
                 <motion.div className="lg:w-3/4" variants={itemVariants}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projects.map((project) => (
-                      <Link key={project.title} href={project.link}>
+                      <Link
+                        key={project.title}
+                        href={project.link}
+                        target="_blank"
+                      >
                         <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
                           <CardHeader className="flex flex-row items-center gap-4">
                             <div className="w-[50px] h-[50px] rounded-lg overflow-hidden">
