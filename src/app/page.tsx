@@ -7,10 +7,10 @@ import { Nav } from "./components/nav";
 import { SEO } from "./components/seo";
 
 const slogans = [
-  "Criando\nSaaS\nrevolucionários.",
-  "Micro SaaS\ncom\nimpacto.",
-  "Soluções\ndigitais\nescaláveis.",
-  "Inovação\npara\no futuro.",
+  "Projetos\nSaaS\nsob medida.",
+  "Micro SaaS\nsimples e\nfuncionais.",
+  "Soluções\nweb\nescaláveis.",
+  "Sistemas\nfocados no\nresultado.",
 ];
 
 const letterVariants = {
